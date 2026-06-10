@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en"><head><script src="/_sdk/telemetry_sdk.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Documents Portfolio</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --navy:#0B2545;
+      --navy-2:#123C6B;
+      --gold:#C9933A;
+      --paper:#F4F6F9;
+      --ink:#152235;
+      --muted:#6F7887;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;width:100%;height:100%;overflow:hidden}
+    body{font-family:'Lato',sans-serif;color:var(--ink)}
+    .presentation-shell{width:100%;height:100%;position:relative;overflow:hidden}
+    .slides-track{height:100%;display:flex;transition:transform .7s cubic-bezier(.77,0,.175,1)}
+    .slide{min-width:100%;height:100%;position:relative;overflow:hidden}
+    .display{font-family:'Playfair Display',serif}
+    .letterspace{letter-spacing:.18em}
+    .fine-line{height:2px;background:var(--gold)}
+    .shadow-soft{box-shadow:0 18px 45px rgba(9,31,56,.13)}
+    .control-btn{
+      width:42px;height:42px;border:1px solid rgba(255,255,255,.28);
+      display:grid;place-items:center;background:rgba(11,37,69,.55);color:#fff;
+      backdrop-filter:blur(8px);transition:.25s ease;
+    }
+    .control-btn:hover{background:rgba(201,147,58,.9);border-color:rgba(201,147,58,.9)}
+    .dot{width:8px;height:8px;border-radius:999px;background:rgba(255,255,255,.45);transition:.25s ease}
+    .dot.active{width:24px;background:var(--gold)}
+    .geo-line{position:absolute;border:1px solid rgba(255,255,255,.06)}
+    .geo-gold{position:absolute;border:1px solid rgba(201,147,58,.22)}
+    .resume-line{height:5px;background:#d7dce3;border-radius:999px}
+    .resume-line.dark{background:#9aa4b2}
+    .resume-line.gold{background:#c9933a}
+    .resume-line.navy{background:#0b2545}
+    .resume-bullet{width:4px;height:4px;background:#9ea7b3;border-radius:50%;margin-top:6px}
+    .metric-card{background:#123C6B;border:1px solid rgba(255,255,255,.08)}
+    .testimonial{background:#fff;color:var(--ink)}
+    .price-card{min-height:310px}
+    .navy-page-pattern:before,
+    .navy-page-pattern:after{
+      content:"";position:absolute;border:1px solid rgba(255,255,255,.06);pointer-events:none
+    }
+    .navy-page-pattern:before{width:260px;height:260px;right:8%;top:10%;transform:rotate(12deg)}
+    .navy-page-pattern:after{width:180px;height:180px;left:5%;bottom:7%;transform:rotate(-18deg)}
+    @media (max-width: 900px){
+      .slide-inner{padding:32px !important}
+      .page2-layout{grid-template-columns:1fr !important}
+      .page2-sidebar{min-height:220px}
+      .page3-grid,.page5-metrics,.page6-grid{grid-template-columns:1fr 1fr !important}
+      .page4-grid{grid-template-columns:1fr 1fr !important}
+      .page5-testimonials{grid-template-columns:1fr !important}
+      .price-card{min-height:240px}
+    }
+    @media (max-width: 640px){
+      .page3-grid,.page4-grid,.page5-metrics,.page6-grid{grid-template-columns:1fr !important}
+      .slide{overflow:auto}
+      .controls-bottom{bottom:12px !important}
+      .slide-counter{display:none}
+    }
+  </style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="/_sdk/resizing_sdk.js" type="text/javascript"></script>
+ </head>
+ <body data-template-id="__page-root" style="background: rgb(11, 37, 69);">
+  <main class="presentation-shell">
+   <div id="slidesTrack" class="slides-track"><!-- PAGE 1 -->
+    <section class="slide navy-page-pattern" style="background:#0B2545;">
+     <div data-template-id="cover-gold-band" class="canva-banner absolute top-0 left-0 w-full h-[15%]" style="background: rgb(201, 147, 58);"></div>
+     <div class="geo-line w-48 h-48 right-[8%] bottom-[8%] rotate-12"></div>
+     <div class="geo-line w-28 h-28 right-[15%] bottom-[15%] -rotate-12"></div>
+     <div class="absolute right-[9%] bottom-[10%] w-28 h-[1px] bg-[#C9933A] rotate-45 opacity-80"></div>
+     <div class="absolute right-[11%] bottom-[12%] w-16 h-[1px] bg-[#C9933A] -rotate-45 opacity-80"></div>
+     <div class="slide-inner h-full px-20 py-16 flex flex-col">
+      <div class="flex-1 flex items-center justify-center text-center">
+       <div class="max-w-5xl">
+        <div class="w-20 h-[2px] bg-[#C9933A] mx-auto mb-9"></div>
+        <h1 data-template-id="cover-title" class="canva-text display letterspace uppercase leading-tight" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 48px; letter-spacing: 0.12rem;">CAREER DOCUMENTS PORTFOLIO</h1>
+        <p data-template-id="cover-subtitle" class="canva-text mt-7 italic" style="color: rgb(201, 147, 58); font-weight: 400; font-style: italic; font-size: 24px;">Professional Resume · Cover Letter · LinkedIn Writing</p>
+        <p data-template-id="cover-supporting" class="canva-text mt-5 tracking-[0.18em] uppercase" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 12px; letter-spacing: 0.16rem;">Crafted for Professionals Who Demand Results</p>
+       </div>
+      </div>
+      <div class="flex items-end justify-between">
+       <p data-template-id="cover-footer-label" class="canva-text tracking-[0.18em] uppercase" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 11px; letter-spacing: 0.14rem;">Fiverr Pro Verified Service</p>
+       <div class="flex items-center gap-3">
+        <div class="w-10 h-[1px] bg-[#C9933A]"></div>
+        <div class="w-2 h-2 border border-[#C9933A] rotate-45"></div>
+       </div>
+      </div>
+     </div>
+    </section><!-- PAGE 2 -->
+    <section class="slide bg-white">
+     <div class="slide-inner h-full p-14">
+      <div class="page2-layout h-full grid grid-cols-[30%_70%] shadow-soft overflow-hidden">
+       <aside data-template-id="about-sidebar" class="canva-section page2-sidebar relative p-12 flex flex-col justify-between" style="background: rgb(11, 37, 69);">
+        <div>
+         <div class="w-12 h-[2px] bg-[#C9933A] mb-7"></div>
+         <h2 data-template-id="who-i-am-title" class="canva-text display uppercase tracking-[0.16em]" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 24px;">WHO I AM</h2>
+         <p data-template-id="who-i-am-copy" class="canva-text mt-8 leading-8" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.7;">A professional resume writer with 3–5 years of experience helping clients across industries land interviews faster through ATS-optimized, achievement-driven career documents.</p>
+        </div>
+        <div class="space-y-6 pt-8">
+         <div class="flex items-center gap-4"><i data-lucide="file-text" class="text-[#C9933A] w-5 h-5"></i> <span data-template-id="resume-expert-label" class="canva-text uppercase tracking-[0.16em]" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 11px; letter-spacing: 0.14rem;">Resume Expert</span>
+         </div>
+         <div class="flex items-center gap-4"><i data-lucide="linkedin" class="text-[#C9933A] w-5 h-5"></i> <span data-template-id="linkedin-pro-label" class="canva-text uppercase tracking-[0.16em]" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 11px; letter-spacing: 0.14rem;">LinkedIn Pro</span>
+         </div>
+         <div class="flex items-center gap-4"><i data-lucide="mail" class="text-[#C9933A] w-5 h-5"></i> <span data-template-id="cover-writer-label" class="canva-text uppercase tracking-[0.16em]" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 11px; letter-spacing: 0.14rem;">Cover Letter Writer</span>
+         </div>
+        </div>
+       </aside>
+       <section class="bg-white px-16 py-14 flex flex-col justify-center">
+        <div class="max-w-4xl">
+         <p data-template-id="about-eyebrow" class="canva-text uppercase tracking-[0.24em]" style="color: rgb(201, 147, 58); font-weight: 700; font-style: normal; font-size: 11px; letter-spacing: 0.18rem;">Strategic Career Branding</p>
+         <h2 data-template-id="deliver-title" class="canva-text display mt-3" style="color: rgb(11, 37, 69); font-weight: 700; font-style: normal; font-size: 36px;">WHAT I DELIVER</h2>
+         <div class="w-20 h-[2px] bg-[#C9933A] mt-6 mb-10"></div>
+         <div class="space-y-9">
+          <div class="grid grid-cols-[18px_1fr] gap-5">
+           <div class="w-3 h-3 bg-[#C9933A] rotate-45 mt-2"></div>
+           <div>
+            <h3 data-template-id="feature-one-title" class="canva-text font-bold" style="color: rgb(11, 37, 69); font-weight: 700; font-style: normal; font-size: 18px;">ATS-Optimized Resumes</h3>
+            <p data-template-id="feature-one-copy" class="canva-text mt-2 leading-7" style="color: rgb(111, 120, 135); font-weight: 400; font-style: normal; font-size: 15px;">Every resume passes automated filters and reaches human eyes.</p>
+           </div>
+          </div>
+          <div class="grid grid-cols-[18px_1fr] gap-5">
+           <div class="w-3 h-3 bg-[#C9933A] rotate-45 mt-2"></div>
+           <div>
+            <h3 data-template-id="feature-two-title" class="canva-text font-bold" style="color: rgb(11, 37, 69); font-weight: 700; font-style: normal; font-size: 18px;">Achievement-Driven Content</h3>
+            <p data-template-id="feature-two-copy" class="canva-text mt-2 leading-7" style="color: rgb(111, 120, 135); font-weight: 400; font-style: normal; font-size: 15px;">Flat duties transformed into quantified, impactful bullet points.</p>
+           </div>
+          </div>
+          <div class="grid grid-cols-[18px_1fr] gap-5">
+           <div class="w-3 h-3 bg-[#C9933A] rotate-45 mt-2"></div>
+           <div>
+            <h3 data-template-id="feature-three-title" class="canva-text font-bold" style="color: rgb(11, 37, 69); font-weight: 700; font-style: normal; font-size: 18px;">Full Career Package</h3>
+            <p data-template-id="feature-three-copy" class="canva-text mt-2 leading-7" style="color: rgb(111, 120, 135); font-weight: 400; font-style: normal; font-size: 15px;">Resume, cover letter, and LinkedIn profile written to work together.</p>
+           </div>
+          </div>
+         </div>
+        </div>
+       </section>
+      </div>
+     </div>
+    </section><!-- PAGE 3 -->
+    <section class="slide" style="background:#F4F6F9;">
+     <div class="slide-inner h-full px-16 py-10 flex flex-col">
+      <div class="text-center mb-8">
+       <p data-template-id="transformation-eyebrow" class="canva-text uppercase tracking-[0.24em]" style="color: rgb(201, 147, 58); font-weight: 700; font-style: normal; font-size: 11px; letter-spacing: 0.18rem;">Before / After</p>
+       <h2 data-template-id="transformation-title" class="canva-text display mt-2" style="color: rgb(11, 37, 69); font-weight: 700; font-style: normal; font-size: 34px;">RESUME TRANSFORMATION</h2>
+       <div class="w-20 h-[2px] bg-[#C9933A] mx-auto mt-4"></div>
+      </div>
+      <div class="page3-grid grid grid-cols-2 gap-9 flex-1 min-h-0">
+       <div class="relative">
+        <div class="flex items-center justify-between mb-3"><span data-template-id="before-label" class="canva-text font-bold tracking-[0.16em] uppercase" style="color: rgb(178, 74, 74); font-weight: 700; font-style: normal; font-size: 13px; letter-spacing: 0.14rem;">Before</span> <span data-template-id="before-badge" class="canva-tag px-3 py-1 text-xs font-bold tracking-[0.12em] uppercase" style="background: rgb(248, 232, 232); color: rgb(165, 71, 71); font-weight: 700; font-style: normal; font-size: 10px;">Weak Positioning</span>
+        </div>
+        <div class="bg-white h-[82%] p-7 shadow-soft relative overflow-hidden">
+         <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <div class="text-red-400 opacity-10 text-[180px] font-bold rotate-[-16deg]">
+           ×
+          </div>
+         </div>
+         <div class="font-serif text-[#222] relative z-10">
+          <h3 class="text-xl font-bold border-b border-black pb-2">JOHN A. WILLIAMS</h3>
+          <p class="text-[9px] mt-1">123 Main Street, City, State | john@email.com | 555-0101</p>
+          <p class="text-[10px] mt-5 font-bold underline">Objective</p>
+          <p class="text-[9px] leading-4 mt-1">Seeking a challenging position where I can use my skills and experience to contribute to organizational goals and continue professional growth.</p>
+          <p class="text-[10px] mt-5 font-bold underline">Work Experience</p>
+          <p class="text-[9px] leading-4 mt-1">Responsible for preparing reports, coordinating team activities, handling client communication, supporting department projects, scheduling meetings, and completing assigned duties in a timely manner.</p>
+          <p class="text-[10px] mt-5 font-bold underline">Education</p>
+          <p class="text-[9px] leading-4 mt-1">Bachelor of Science in Business Administration, 2017</p>
+          <p class="text-[10px] mt-5 font-bold underline">Skills</p>
+          <p class="text-[9px] leading-4 mt-1">Microsoft Office, Communication, Teamwork, Time Management, Problem Solving, Organization</p>
+         </div>
+        </div>
+       </div>
+       <div class="relative">
+        <div class="flex items-center justify-between mb-3"><span data-template-id="after-label" class="canva-text font-bold tracking-[0.16em] uppercase" style="color: rgb(39, 114, 74); font-weight: 700; font-style: normal; font-size: 13px; letter-spacing: 0.14rem;">After</span> <span data-template-id="after-badge" class="canva-tag px-3 py-1 text-xs font-bold tracking-[0.12em] uppercase" style="background: rgb(230, 243, 236); color: rgb(42, 122, 80); font-weight: 700; font-style: normal; font-size: 10px;">Interview Ready</span>
+        </div>
+        <div class="bg-white h-[82%] shadow-soft relative overflow-hidden">
+         <div class="absolute right-7 bottom-3 pointer-events-none text-[#C9933A] opacity-10 text-[150px]">
+          ✓
+         </div>
+         <div class="h-20 bg-[#0B2545] px-7 py-5">
+          <div class="text-white tracking-[0.18em] text-sm font-bold">
+           JOHN A. WILLIAMS
+          </div>
+          <div class="text-[#D6B06B] text-[9px] mt-1 tracking-[0.16em]">
+           OPERATIONS &amp; CLIENT SUCCESS PROFESSIONAL
+          </div>
+         </div>
+         <div class="grid grid-cols-[34%_66%] h-[calc(100%-5rem)]">
+          <div class="bg-[#EEF1F5] p-5">
+           <div class="text-[9px] font-bold tracking-[0.18em] text-[#0B2545]">
+            CONTACT
+           </div>
+           <div class="resume-line mt-3 w-20"></div>
+           <div class="resume-line mt-2 w-24"></div>
+           <div class="resume-line mt-2 w-16"></div>
+           <div class="text-[9px] font-bold tracking-[0.18em] text-[#0B2545] mt-7">
+            CORE SKILLS
+           </div>
+           <div class="space-y-2 mt-3">
+            <div class="resume-line navy w-20"></div>
+            <div class="resume-line navy w-24"></div>
+            <div class="resume-line navy w-16"></div>
+            <div class="resume-line navy w-20"></div>
+           </div>
+           <div class="text-[9px] font-bold tracking-[0.18em] text-[#0B2545] mt-7">
+            EDUCATION
+           </div>
+           <div class="resume-line mt-3 w-20"></div>
+           <div class="resume-line mt-2 w-16"></div>
+          </div>
+          <div class="p-5">
+           <div class="text-[9px] font-bold tracking-[0.18em] text-[#0B2545]">
+            PROFILE
+           </div>
+           <div class="w-10 h-[2px] bg-[#C9933A] mt-2 mb-3"></div>
+           <div class="resume-line w-full"></div>
+           <div class="resume-line mt-2 w-[90%]"></div>
+           <div class="resume-line mt-2 w-[74%]"></div>
+           <div class="text-[9px] font-bold tracking-[0.18em] text-[#0B2545] mt-6">
+            EXPERIENCE
+           </div>
+           <div class="w-10 h-[2px] bg-[#C9933A] mt-2 mb-3"></div>
+           <div class="resume-line dark w-28"></div>
+           <div class="space-y-2 mt-3">
+            <div class="flex gap-2">
+             <div class="resume-bullet"></div>
+             <div class="resume-line w-[82%]"></div>
+            </div>
+            <div class="flex gap-2">
+             <div class="resume-bullet"></div>
+             <div class="resume-line w-[74%]"></div>
+            </div>
+            <div class="flex gap-2">
+             <div class="resume-bullet"></div>
+             <div class="resume-line w-[88%]"></div>
+            </div>
+           </div>
+           <div class="resume-line dark w-24 mt-5"></div>
+           <div class="space-y-2 mt-3">
+            <div class="flex gap-2">
+             <div class="resume-bullet"></div>
+             <div class="resume-line w-[79%]"></div>
+            </div>
+            <div class="flex gap-2">
+             <div class="resume-bullet"></div>
+             <div class="resume-line w-[68%]"></div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div data-template-id="ats-banner" class="canva-banner text-center py-3 mt-2 tracking-[0.16em] uppercase" style="background: rgb(201, 147, 58); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 12px; letter-spacing: 0.12rem;">ATS SCORE: 38% → 96% · Interview Rate: 3x Higher</div>
+     </div>
+    </section><!-- PAGE 4 -->
+    <section class="slide bg-white">
+     <div class="slide-inner h-full px-16 py-10 flex flex-col">
+      <div class="text-center mb-7">
+       <p data-template-id="work-eyebrow" class="canva-text uppercase tracking-[0.24em]" style="color: rgb(201, 147, 58); font-weight: 700; font-style: normal; font-size: 11px; letter-spacing: 0.18rem;">Selected Portfolio</p>
+       <h2 data-template-id="work-title" class="canva-text display mt-2" style="color: rgb(11, 37, 69); font-weight: 700; font-style: normal; font-size: 34px;">RECENT CLIENT WORK</h2>
+       <div class="w-24 h-[2px] bg-[#C9933A] mx-auto mt-4"></div>
+      </div>
+      <div class="page4-grid grid grid-cols-2 gap-6 flex-1 min-h-0">
+       <article class="border border-[#D5B072] bg-white shadow-soft p-4">
+        <div class="h-[78%] bg-white border border-[#E8EDF2] p-3">
+         <div class="h-10 bg-[#0B2545] px-3 py-2">
+          <div class="w-28 h-2 bg-white"></div>
+          <div class="w-20 h-1 bg-[#C9933A] mt-2"></div>
+         </div>
+         <div class="grid grid-cols-[30%_70%] h-[calc(100%-2.5rem)]">
+          <div class="bg-[#EEF1F4] p-3 space-y-2">
+           <div class="resume-line navy w-12"></div>
+           <div class="resume-line w-16"></div>
+           <div class="resume-line w-12"></div>
+           <div class="resume-line navy w-10 mt-4"></div>
+           <div class="resume-line w-16"></div>
+           <div class="resume-line w-12"></div>
+          </div>
+          <div class="p-3">
+           <div class="resume-line navy w-16"></div>
+           <div class="resume-line mt-3 w-full"></div>
+           <div class="resume-line mt-2 w-[85%]"></div>
+           <div class="resume-line navy w-20 mt-4"></div>
+           <div class="resume-line mt-3 w-full"></div>
+           <div class="resume-line mt-2 w-[75%]"></div>
+          </div>
+         </div>
+        </div>
+        <h3 data-template-id="sample-one-title" class="canva-text font-bold mt-3" style="color: rgb(11, 37, 69); font-weight: 700; font-style: normal; font-size: 14px;">Finance Executive · CFO Level</h3>
+        <p data-template-id="sample-one-caption" class="canva-text italic mt-1" style="color: rgb(125, 135, 149); font-weight: 400; font-style: italic; font-size: 11px;">ATS-Optimized · Delivered in 24hrs</p>
+       </article>
+       <article class="border border-[#D5B072] bg-white shadow-soft p-4">
+        <div class="h-[78%] bg-[#F8FAFB] border border-[#E6ECEF] p-3">
+         <div class="h-9 bg-[#0F6D73] px-3 py-2">
+          <div class="w-24 h-2 bg-white"></div>
+          <div class="w-16 h-1 bg-[#A7D8D8] mt-2"></div>
+         </div>
+         <div class="p-4">
+          <div class="resume-line dark w-24"></div>
+          <div class="resume-line mt-3 w-full"></div>
+          <div class="resume-line mt-2 w-[87%]"></div>
+          <div class="grid grid-cols-2 gap-3 mt-4">
+           <div>
+            <div class="resume-line dark w-14"></div>
+            <div class="resume-line mt-2 w-full"></div>
+            <div class="resume-line mt-2 w-[80%]"></div>
+           </div>
+           <div>
+            <div class="resume-line dark w-14"></div>
+            <div class="resume-line mt-2 w-full"></div>
+            <div class="resume-line mt-2 w-[70%]"></div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <h3 data-template-id="sample-two-title" class="canva-text font-bold mt-3" style="color: rgb(11, 37, 69); font-weight: 700; font-style: normal; font-size: 14px;">Tech Professional · Senior Engineer</h3>
+        <p data-template-id="sample-two-caption" class="canva-text italic mt-1" style="color: rgb(125, 135, 149); font-weight: 400; font-style: italic; font-size: 11px;">ATS-Optimized · Delivered in 24hrs</p>
+       </article>
+       <article class="border border-[#D5B072] bg-white shadow-soft p-4">
+        <div class="h-[78%] bg-white border border-[#E8EDF2] p-4">
+         <div class="flex justify-between items-end border-b border-[#D3D8DE] pb-3">
+          <div>
+           <div class="w-28 h-2 bg-[#333]"></div>
+           <div class="w-20 h-1 bg-[#999] mt-2"></div>
+          </div>
+          <div class="w-12 h-5 border border-[#C9933A]"></div>
+         </div>
+         <div class="grid grid-cols-[68%_32%] gap-4 mt-4">
+          <div>
+           <div class="resume-line dark w-14"></div>
+           <div class="resume-line mt-3 w-full"></div>
+           <div class="resume-line mt-2 w-[92%]"></div>
+           <div class="resume-line dark w-16 mt-4"></div>
+           <div class="resume-line mt-3 w-full"></div>
+           <div class="resume-line mt-2 w-[84%]"></div>
+          </div>
+          <div>
+           <div class="resume-line dark w-12"></div>
+           <div class="resume-line mt-3 w-full"></div>
+           <div class="resume-line mt-2 w-[75%]"></div>
+           <div class="resume-line dark w-12 mt-4"></div>
+           <div class="resume-line mt-3 w-[80%]"></div>
+          </div>
+         </div>
+        </div>
+        <h3 data-template-id="sample-three-title" class="canva-text font-bold mt-3" style="color: rgb(11, 37, 69); font-weight: 700; font-style: normal; font-size: 14px;">Marketing Manager · Mid-Level</h3>
+        <p data-template-id="sample-three-caption" class="canva-text italic mt-1" style="color: rgb(125, 135, 149); font-weight: 400; font-style: italic; font-size: 11px;">ATS-Optimized · Delivered in 24hrs</p>
+       </article>
+       <article class="border border-[#D5B072] bg-white shadow-soft p-4">
+        <div class="h-[78%] bg-[#FBFCFD] border border-[#E8EDF2] p-3">
+         <div class="h-10 bg-[#1F5A8A] px-3 py-2">
+          <div class="w-24 h-2 bg-white"></div>
+          <div class="w-16 h-1 bg-[#E3C07C] mt-2"></div>
+         </div>
+         <div class="grid grid-cols-[36%_64%] h-[calc(100%-2.5rem)]">
+          <div class="bg-[#EDF4F8] p-3">
+           <div class="resume-line navy w-12"></div>
+           <div class="resume-line mt-3 w-full"></div>
+           <div class="resume-line mt-2 w-[80%]"></div>
+           <div class="resume-line navy w-10 mt-4"></div>
+           <div class="resume-line mt-3 w-[90%]"></div>
+          </div>
+          <div class="p-3">
+           <div class="resume-line navy w-16"></div>
+           <div class="resume-line mt-3 w-full"></div>
+           <div class="resume-line mt-2 w-[88%]"></div>
+           <div class="resume-line navy w-18 mt-4"></div>
+           <div class="resume-line mt-3 w-full"></div>
+           <div class="resume-line mt-2 w-[72%]"></div>
+          </div>
+         </div>
+        </div>
+        <h3 data-template-id="sample-four-title" class="canva-text font-bold mt-3" style="color: rgb(11, 37, 69); font-weight: 700; font-style: normal; font-size: 14px;">Fresh Graduate · Entry Level</h3>
+        <p data-template-id="sample-four-caption" class="canva-text italic mt-1" style="color: rgb(125, 135, 149); font-weight: 400; font-style: italic; font-size: 11px;">ATS-Optimized · Delivered in 24hrs</p>
+       </article>
+      </div>
+      <footer data-template-id="work-footer" class="canva-footer text-center py-3 mt-6 tracking-[0.14em] uppercase" style="background: rgb(11, 37, 69); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 11px; letter-spacing: 0.12rem;">All samples created from scratch. Zero templates used.</footer>
+     </div>
+    </section><!-- PAGE 5 -->
+    <section class="slide navy-page-pattern" style="background:#0B2545;">
+     <div class="slide-inner h-full px-16 py-10 flex flex-col">
+      <div class="text-center mb-7">
+       <p data-template-id="results-eyebrow" class="canva-text uppercase tracking-[0.24em]" style="color: rgb(201, 147, 58); font-weight: 700; font-style: normal; font-size: 11px; letter-spacing: 0.18rem;">Proof Over Promises</p>
+       <h2 data-template-id="results-title" class="canva-text display mt-2" style="color: rgb(201, 147, 58); font-weight: 700; font-style: normal; font-size: 36px;">RESULTS THAT SPEAK</h2>
+       <p data-template-id="results-subtitle" class="canva-text mt-3" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 15px;">Real outcomes for real professionals.</p>
+      </div>
+      <div class="page5-metrics grid grid-cols-4 gap-5">
+       <div data-template-id="metric-card-one" class="canva-card metric-card rounded-sm p-6 text-center" style="background: rgb(18, 60, 107);">
+        <div data-template-id="metric-one-number" class="canva-text display" style="color: rgb(201, 147, 58); font-weight: 700; font-style: normal; font-size: 38px;">3x</div>
+        <div data-template-id="metric-one-label" class="canva-text mt-2 uppercase tracking-[0.14em]" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 10px; letter-spacing: 0.12rem;">More Interview Callbacks</div>
+       </div>
+       <div data-template-id="metric-card-two" class="canva-card metric-card rounded-sm p-6 text-center" style="background: rgb(18, 60, 107);">
+        <div data-template-id="metric-two-number" class="canva-text display" style="color: rgb(201, 147, 58); font-weight: 700; font-style: normal; font-size: 38px;">96%</div>
+        <div data-template-id="metric-two-label" class="canva-text mt-2 uppercase tracking-[0.14em]" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 10px; letter-spacing: 0.12rem;">ATS Pass Rate</div>
+       </div>
+       <div data-template-id="metric-card-three" class="canva-card metric-card rounded-sm p-6 text-center" style="background: rgb(18, 60, 107);">
+        <div data-template-id="metric-three-number" class="canva-text display" style="color: rgb(201, 147, 58); font-weight: 700; font-style: normal; font-size: 38px;">24hrs</div>
+        <div data-template-id="metric-three-label" class="canva-text mt-2 uppercase tracking-[0.14em]" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 10px; letter-spacing: 0.12rem;">Average Delivery Time</div>
+       </div>
+       <div data-template-id="metric-card-four" class="canva-card metric-card rounded-sm p-6 text-center" style="background: rgb(18, 60, 107);">
+        <div data-template-id="metric-four-number" class="canva-text display" style="color: rgb(201, 147, 58); font-weight: 700; font-style: normal; font-size: 38px;">100%</div>
+        <div data-template-id="metric-four-label" class="canva-text mt-2 uppercase tracking-[0.14em]" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 10px; letter-spacing: 0.12rem;">Satisfaction Guaranteed</div>
+       </div>
+      </div>
+      <div class="page5-testimonials grid grid-cols-3 gap-5 mt-8 flex-1 min-h-0">
+       <article data-template-id="testimonial-one-card" class="canva-card testimonial p-6" style="background: rgb(255, 255, 255);">
+        <div class="text-[#C9933A] text-4xl leading-none display">
+         “
+        </div>
+        <p data-template-id="testimonial-one-quote" class="canva-text leading-7 mt-1" style="color: rgb(38, 50, 66); font-weight: 400; font-style: normal; font-size: 14px;">I got 4 interview calls in the first week after my resume was rewritten. Absolutely worth every penny.</p>
+        <p data-template-id="testimonial-one-author" class="canva-text mt-4 uppercase tracking-[0.14em]" style="color: rgb(201, 147, 58); font-weight: 700; font-style: normal; font-size: 10px; letter-spacing: 0.12rem;">Sarah M., Marketing Manager</p>
+       </article>
+       <article data-template-id="testimonial-two-card" class="canva-card testimonial p-6" style="background: rgb(255, 255, 255);">
+        <div class="text-[#C9933A] text-4xl leading-none display">
+         “
+        </div>
+        <p data-template-id="testimonial-two-quote" class="canva-text leading-7 mt-1" style="color: rgb(38, 50, 66); font-weight: 400; font-style: normal; font-size: 14px;">The LinkedIn rewrite alone tripled my profile views. My recruiter reached out within 3 days.</p>
+        <p data-template-id="testimonial-two-author" class="canva-text mt-4 uppercase tracking-[0.14em]" style="color: rgb(201, 147, 58); font-weight: 700; font-style: normal; font-size: 10px; letter-spacing: 0.12rem;">Daniel K., Software Engineer</p>
+       </article>
+       <article data-template-id="testimonial-three-card" class="canva-card testimonial p-6" style="background: rgb(255, 255, 255);">
+        <div class="text-[#C9933A] text-4xl leading-none display">
+         “
+        </div>
+        <p data-template-id="testimonial-three-quote" class="canva-text leading-7 mt-1" style="color: rgb(38, 50, 66); font-weight: 400; font-style: normal; font-size: 14px;">Professional, fast, and the result was stunning. Landed my dream job within 3 weeks.</p>
+        <p data-template-id="testimonial-three-author" class="canva-text mt-4 uppercase tracking-[0.14em]" style="color: rgb(201, 147, 58); font-weight: 700; font-style: normal; font-size: 10px; letter-spacing: 0.12rem;">Priya R., Finance Analyst</p>
+       </article>
+      </div>
+     </div>
+    </section><!-- PAGE 6 -->
+    <section class="slide bg-white">
+     <div class="slide-inner h-full px-16 py-10 flex flex-col">
+      <div class="text-center mb-8">
+       <p data-template-id="packages-eyebrow" class="canva-text uppercase tracking-[0.24em]" style="color: rgb(201, 147, 58); font-weight: 700; font-style: normal; font-size: 11px; letter-spacing: 0.18rem;">Simple. Strategic. Effective.</p>
+       <h2 data-template-id="packages-title" class="canva-text display mt-2" style="color: rgb(11, 37, 69); font-weight: 700; font-style: normal; font-size: 34px;">CHOOSE YOUR PACKAGE</h2>
+       <div class="w-24 h-[2px] bg-[#C9933A] mx-auto mt-4"></div>
+      </div>
+      <div class="page6-grid grid grid-cols-3 gap-6 items-end flex-1">
+       <article data-template-id="basic-card" class="canva-card price-card bg-[#F4F6F9] p-7 shadow-soft" style="background: rgb(244, 246, 249);">
+        <p data-template-id="basic-kicker" class="canva-text uppercase tracking-[0.18em]" style="color: rgb(123, 132, 145); font-weight: 700; font-style: normal; font-size: 10px; letter-spacing: 0.16rem;">Essential</p>
+        <h3 data-template-id="basic-title" class="canva-text display mt-3" style="color: rgb(11, 37, 69); font-weight: 700; font-style: normal; font-size: 24px;">BASIC</h3>
+        <div data-template-id="basic-price" class="canva-text display mt-5" style="color: rgb(201, 147, 58); font-weight: 700; font-style: normal; font-size: 42px;">$15</div>
+        <div class="w-10 h-[2px] bg-[#C9933A] my-5"></div>
+        <ul class="space-y-3">
+         <li class="flex gap-3 items-center"><i data-lucide="check" class="w-4 h-4 text-[#C9933A]"></i><span data-template-id="basic-item-one" class="canva-text" style="color: rgb(95, 104, 117); font-weight: 400; font-style: normal; font-size: 14px;">ATS Resume</span></li>
+         <li class="flex gap-3 items-center"><i data-lucide="check" class="w-4 h-4 text-[#C9933A]"></i><span data-template-id="basic-item-two" class="canva-text" style="color: rgb(95, 104, 117); font-weight: 400; font-style: normal; font-size: 14px;">Word + PDF</span></li>
+         <li class="flex gap-3 items-center"><i data-lucide="check" class="w-4 h-4 text-[#C9933A]"></i><span data-template-id="basic-item-three" class="canva-text" style="color: rgb(95, 104, 117); font-weight: 400; font-style: normal; font-size: 14px;">2 Revisions</span></li>
+         <li class="flex gap-3 items-center"><i data-lucide="check" class="w-4 h-4 text-[#C9933A]"></i><span data-template-id="basic-item-four" class="canva-text" style="color: rgb(95, 104, 117); font-weight: 400; font-style: normal; font-size: 14px;">3-Day Delivery</span></li>
+        </ul>
+       </article>
+       <article data-template-id="standard-card" class="canva-card price-card p-8 shadow-soft relative -translate-y-3" style="background: rgb(11, 37, 69);">
+        <div data-template-id="standard-badge" class="canva-tag absolute -top-4 left-1/2 -translate-x-1/2 px-5 py-2 uppercase tracking-[0.16em]" style="background: rgb(201, 147, 58); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 9px; letter-spacing: 0.14rem;">Most Popular</div>
+        <p data-template-id="standard-kicker" class="canva-text uppercase tracking-[0.18em]" style="color: rgb(217, 226, 236); font-weight: 700; font-style: normal; font-size: 10px; letter-spacing: 0.16rem;">Best Value</p>
+        <h3 data-template-id="standard-title" class="canva-text display mt-3" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 24px;">STANDARD</h3>
+        <div data-template-id="standard-price" class="canva-text display mt-5" style="color: rgb(201, 147, 58); font-weight: 700; font-style: normal; font-size: 44px;">$35</div>
+        <div class="w-10 h-[2px] bg-[#C9933A] my-5"></div>
+        <ul class="space-y-3">
+         <li class="flex gap-3 items-center"><i data-lucide="check" class="w-4 h-4 text-[#C9933A]"></i><span data-template-id="standard-item-one" class="canva-text" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 14px;">ATS Resume</span></li>
+         <li class="flex gap-3 items-center"><i data-lucide="check" class="w-4 h-4 text-[#C9933A]"></i><span data-template-id="standard-item-two" class="canva-text" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 14px;">Cover Letter</span></li>
+         <li class="flex gap-3 items-center"><i data-lucide="check" class="w-4 h-4 text-[#C9933A]"></i><span data-template-id="standard-item-three" class="canva-text" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 14px;">Unlimited Revisions</span></li>
+         <li class="flex gap-3 items-center"><i data-lucide="check" class="w-4 h-4 text-[#C9933A]"></i><span data-template-id="standard-item-four" class="canva-text" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 14px;">2-Day Delivery</span></li>
+        </ul>
+       </article>
+       <article data-template-id="premium-card" class="canva-card price-card bg-[#F4F6F9] p-7 shadow-soft" style="background: rgb(244, 246, 249);">
+        <p data-template-id="premium-kicker" class="canva-text uppercase tracking-[0.18em]" style="color: rgb(123, 132, 145); font-weight: 700; font-style: normal; font-size: 10px; letter-spacing: 0.16rem;">Complete</p>
+        <h3 data-template-id="premium-title" class="canva-text display mt-3" style="color: rgb(11, 37, 69); font-weight: 700; font-style: normal; font-size: 24px;">PREMIUM</h3>
+        <div data-template-id="premium-price" class="canva-text display mt-5" style="color: rgb(201, 147, 58); font-weight: 700; font-style: normal; font-size: 42px;">$65</div>
+        <div class="w-10 h-[2px] bg-[#C9933A] my-5"></div>
+        <ul class="space-y-3">
+         <li class="flex gap-3 items-center"><i data-lucide="check" class="w-4 h-4 text-[#C9933A]"></i><span data-template-id="premium-item-one" class="canva-text" style="color: rgb(95, 104, 117); font-weight: 400; font-style: normal; font-size: 14px;">ATS Resume</span></li>
+         <li class="flex gap-3 items-center"><i data-lucide="check" class="w-4 h-4 text-[#C9933A]"></i><span data-template-id="premium-item-two" class="canva-text" style="color: rgb(95, 104, 117); font-weight: 400; font-style: normal; font-size: 14px;">Cover Letter</span></li>
+         <li class="flex gap-3 items-center"><i data-lucide="check" class="w-4 h-4 text-[#C9933A]"></i><span data-template-id="premium-item-three" class="canva-text" style="color: rgb(95, 104, 117); font-weight: 400; font-style: normal; font-size: 14px;">LinkedIn Rewrite</span></li>
+         <li class="flex gap-3 items-center"><i data-lucide="check" class="w-4 h-4 text-[#C9933A]"></i><span data-template-id="premium-item-four" class="canva-text" style="color: rgb(95, 104, 117); font-weight: 400; font-style: normal; font-size: 14px;">Unlimited Revisions</span></li>
+         <li class="flex gap-3 items-center"><i data-lucide="check" class="w-4 h-4 text-[#C9933A]"></i><span data-template-id="premium-item-five" class="canva-text" style="color: rgb(95, 104, 117); font-weight: 400; font-style: normal; font-size: 14px;">24hr Delivery</span></li>
+        </ul>
+       </article>
+      </div>
+      <div data-template-id="cta-banner" class="canva-banner text-center py-4 mt-8 tracking-[0.12em] uppercase" style="background: rgb(201, 147, 58); color: rgb(11, 37, 69); font-weight: 700; font-style: normal; font-size: 13px; letter-spacing: 0.1rem;">MESSAGE ME ON FIVERR — FREE CONSULTATION BEFORE YOU ORDER</div>
+      <footer data-template-id="packages-footer" class="canva-footer text-center mt-4 tracking-[0.12em] uppercase" style="color: rgb(11, 37, 69); font-weight: 700; font-style: normal; font-size: 10px; letter-spacing: 0.1rem;">Professional Resume Writing · All Industries · All Experience Levels · Worldwide Clients</footer>
+     </div>
+    </section>
+   </div><button id="prevBtn" class="control-btn absolute left-5 top-1/2 -translate-y-1/2" aria-label="Previous slide"> <i data-lucide="chevron-left" class="w-5 h-5"></i> </button> <button id="nextBtn" class="control-btn absolute right-5 top-1/2 -translate-y-1/2" aria-label="Next slide"> <i data-lucide="chevron-right" class="w-5 h-5"></i> </button>
+   <div class="controls-bottom absolute bottom-5 left-1/2 -translate-x-1/2 flex items-center gap-3"><button class="dot active" data-slide="0" aria-label="Go to slide 1"></button> <button class="dot" data-slide="1" aria-label="Go to slide 2"></button> <button class="dot" data-slide="2" aria-label="Go to slide 3"></button> <button class="dot" data-slide="3" aria-label="Go to slide 4"></button> <button class="dot" data-slide="4" aria-label="Go to slide 5"></button> <button class="dot" data-slide="5" aria-label="Go to slide 6"></button>
+   </div>
+   <div id="slideCounter" class="slide-counter absolute right-6 bottom-4 text-white/70 text-xs tracking-[0.18em] uppercase">
+    01 / 06
+   </div>
+  </main>
+  <script src="/_sdk/editing_sdk.js"></script>
+  <script>
+    lucide.createIcons();
+
+    const track = document.getElementById('slidesTrack');
+    const dots = Array.from(document.querySelectorAll('.dot'));
+    const counter = document.getElementById('slideCounter');
+    let current = 0;
+    const total = 6;
+
+    function updateSlides(index){
+      current = Math.max(0, Math.min(total - 1, index));
+      track.style.transform = `translateX(-${current * 100}%)`;
+      dots.forEach((dot, i) => dot.classList.toggle('active', i === current));
+      counter.textContent = `${String(current + 1).padStart(2,'0')} / 06`;
+    }
+
+    document.getElementById('prevBtn').addEventListener('click', () => updateSlides(current - 1));
+    document.getElementById('nextBtn').addEventListener('click', () => updateSlides(current + 1));
+    dots.forEach(dot => dot.addEventListener('click', () => updateSlides(Number(dot.dataset.slide))));
+    document.addEventListener('keydown', (e) => {
+      if(e.key === 'ArrowRight') updateSlides(current + 1);
+      if(e.key === 'ArrowLeft') updateSlides(current - 1);
+    });
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a095d697baf9252e',t:'MTc4MTA2Nzg5Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body></html>
